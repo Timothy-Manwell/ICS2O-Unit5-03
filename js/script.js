@@ -10,14 +10,28 @@
  * Check service worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-PWA-Test/sw.js", {
-    scope: "/ICS2O-PWA-Test/",
+  navigator.serviceWorker.register("/ICS2O-Unit5-03/sw.js", {
+    scope: "/ICS2O-Unit5-03/",
   })
+}
+
+/**
+ * This function updates the slider value.
+ */
+ function updateSliderValue(valueFromSlider) {
+  document.getElementById("slider-value").innerHTML = "Your age: " + valueFromSlider
 }
 
 /**
  * This function displays an alert.
  */
 function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+
+  if (slider-value > 13){
+    document.getElementById("movie-rating").innerHTML = "You can see up to an r rated movie."
+  } else if (slider-value == 13) {
+    document.getElementById("movie-rating").innerHTML = "You can see up to a Pg 13 rated movie."
+  } else if (slider-value < 13) {
+    document.getElementById("movie-rating").innerHTML = "You can see up to a G 13 rated movie."
+  }
 }
