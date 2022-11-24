@@ -18,20 +18,23 @@ if (navigator.serviceWorker) {
 /**
  * This function updates the slider value.
  */
- function updateSliderValue(valueFromSlider) {
-  document.getElementById("slider-value").innerHTML = "Your age: " + valueFromSlider
+function updateSliderValue(valueFromSlider) {
+  document.getElementById("slider-value").innerHTML =
+    "Your age: " + valueFromSlider
 }
 
 /**
  * This function displays an alert.
  */
 function myButtonClicked() {
-
-  if (slider-value > 13){
-    document.getElementById("movie-rating").innerHTML = "You can see up to an r rated movie."
-  } else if (slider-value == 13) {
-    document.getElementById("movie-rating").innerHTML = "You can see up to a Pg 13 rated movie."
-  } else if (slider-value < 13) {
-    document.getElementById("movie-rating").innerHTML = "You can see up to a G 13 rated movie."
+  if (slider - value > 13) {
+    document.getElementById("movie-rating").innerHTML =
+      "You can see up to an r rated movie."
+  } else if (slider - value == 13) {
+    document.getElementById("movie-rating").innerHTML =
+      "You can see up to a Pg 13 rated movie."
+  } else if (slider - value < 13) {
+    document.getElementById("movie-rating").innerHTML =
+      "You can see up to a G 13 rated movie."
   }
 }
