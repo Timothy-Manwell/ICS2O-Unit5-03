@@ -19,14 +19,13 @@ if (navigator.serviceWorker) {
  * This function updates the slider value.
  */
 function updateSliderValue(valueFromSlider) {
-  document.getElementById("slider-value").innerHTML = "Your age: " + valueFromSlider
+  document.getElementById("slider-value").innerHTML = valueFromSlider
 }
 
 /**
  * This function displays an alert.
  */
 function myButtonClicked() {
-  
   if (valueFromSlider > 13) {
     document.getElementById("movie-rating").innerHTML =
       "You can see up to an r rated movie."
