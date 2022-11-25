@@ -27,13 +27,13 @@ function updateSliderValue(valueFromSlider) {
  * This function displays an alert.
  */
 function myButtonClicked() {
-  if (slider-value > 13) {
+  if (slider - value > 13) {
     document.getElementById("movie-rating").innerHTML =
       "You can see up to an r rated movie."
-  } else if (slider-value == 13) {
+  } else if (slider - value == 13) {
     document.getElementById("movie-rating").innerHTML =
       "You can see up to a Pg 13 rated movie."
-  } else if (slider-value < 13) {
+  } else if (slider - value < 13) {
     document.getElementById("movie-rating").innerHTML =
       "You can see up to a G 13 rated movie."
   }
