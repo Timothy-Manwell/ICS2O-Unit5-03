@@ -23,12 +23,12 @@ function updateSliderValue(valueFromSlider) {
 
   if (valueFromSlider > 13) {
     document.getElementById("movie-rating").innerHTML =
-      "You can see up to an r rated movie."
+      "You can see up to an R rated movie."
   } else if (valueFromSlider == 13) {
     document.getElementById("movie-rating").innerHTML =
       "You can see up to a Pg 13 rated movie."
   } else if (valueFromSlider < 13) {
     document.getElementById("movie-rating").innerHTML =
-      "You can see up to a G 13 rated movie."
+      "You can see up to a G rated movie."
   }
 }
