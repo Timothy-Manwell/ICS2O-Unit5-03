@@ -19,20 +19,21 @@ if (navigator.serviceWorker) {
  * This function updates the slider value.
  */
 function updateSliderValue(valueFromSlider) {
-  document.getElementById("slider-value").innerHTML = valueFromSlider
+  document.getElementById("slider-value").innerHTML = "Your age: " + valueFromSlider
 }
 
 /**
  * This function displays an alert.
  */
 function myButtonClicked() {
-  if (slider-value > 13) {
+  
+  if (valueFromSlider > 13) {
     document.getElementById("movie-rating").innerHTML =
       "You can see up to an r rated movie."
-  } else if (slider-value == 13) {
+  } else if (valueFromSlider == 13) {
     document.getElementById("movie-rating").innerHTML =
       "You can see up to a Pg 13 rated movie."
-  } else if (slider-value < 13) {
+  } else if (valueFromSlider < 13) {
     document.getElementById("movie-rating").innerHTML =
       "You can see up to a G 13 rated movie."
   }
