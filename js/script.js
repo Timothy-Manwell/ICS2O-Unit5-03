@@ -26,7 +26,7 @@ function updateSliderValue(valueFromSlider) {
  * This function displays an alert.
  */
 function myButtonClicked() {
-  valueFromSlider = document.getElementById("slider-value").innerHTML
+  valueFromSlider = document.getElementById("slider-value").value
   if (valueFromSlider > 13) {
     document.getElementById("movie-rating").innerHTML =
       "You can see up to an r rated movie."
